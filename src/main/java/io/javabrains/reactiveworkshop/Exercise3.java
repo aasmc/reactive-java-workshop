@@ -12,7 +12,7 @@ public class Exercise3 {
         // Get all numbers in the ReactiveSources.intNumbersFlux stream
         // into a List and print the list and its size
         List<Integer> list = ReactiveSources.intNumbersFlux()
-                .doOnEach(e -> System.out.println(e.get()))
+                .doOnEach(e -> System.out.println(e))
                 .toStream()
                 .toList();
         System.out.println("List size: " + list.size());
