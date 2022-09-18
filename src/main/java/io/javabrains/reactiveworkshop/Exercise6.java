@@ -1,5 +1,7 @@
 package io.javabrains.reactiveworkshop;
 
+import org.reactivestreams.Subscription;
+
 import java.io.IOException;
 import java.time.Duration;
 
