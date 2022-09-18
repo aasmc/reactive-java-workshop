@@ -1,5 +1,7 @@
 package io.javabrains.reactiveworkshop;
 
+import reactor.core.scheduler.Scheduler;
+
 import java.io.IOException;
 
 public class Exercise2 {
@@ -14,7 +16,7 @@ public class Exercise2 {
 
         // Print all users in the ReactiveSources.userFlux stream
         ReactiveSources.userFlux()
-                        .subscribe(user -> System.out.println(user));
+                .subscribe(user -> System.out.println(user));
 
         System.out.println("Press a key to end");
         System.in.read();
